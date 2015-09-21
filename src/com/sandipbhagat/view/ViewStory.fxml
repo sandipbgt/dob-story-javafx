@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+
+<VBox prefWidth="600.0" spacing="2.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sandipbhagat.view.ViewStoryController">
+   <children>
+      <Label fx:id="nameLabel" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" text="title area" textFill="#c0392b">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Separator prefWidth="200.0" />
+      <Label fx:id="storyLabel" text="story area" textFill="#464545" wrapText="true">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER_RIGHT" spacing="5.0">
+         <children>
+            <Button fx:id="copyButton" mnemonicParsing="false" text="Copy above text" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <TextField fx:id="storyTextField" editable="false" visible="false" />
+   </children>
+</VBox>

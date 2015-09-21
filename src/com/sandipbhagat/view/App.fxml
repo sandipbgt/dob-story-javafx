@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" style="-fx-background-color: #e74c3c;" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sandipbhagat.view.AppController">
+  <columnConstraints>
+    <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="12.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="DOB" textFill="#ecf0f1" GridPane.rowIndex="2" />
+      <Button fx:id="submitButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="SUBMIT" textFill="#353939" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label layoutX="24.0" layoutY="91.0" text="NAME" textFill="#ecf0f1" GridPane.rowIndex="1" />
+      <TextField fx:id="nameTextField" promptText="Your name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <DatePicker fx:id="birthDate" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="166.0" promptText="Your date of birth" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Find Your Date Of Birth Story" textAlignment="CENTER" textFill="#ecf0f1" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <GridPane.margin>
+            <Insets bottom="10.0" />
+         </GridPane.margin>
+      </Label>
+      <Label alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="By Sandip Bhagat" textFill="#ffd2d2" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</GridPane>
